@@ -1,0 +1,103 @@
+body {
+  background-color: hsl(210, 46%, 95%);
+  font-family: "Manrope";
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  justify-content: space-around;
+  font-size: 15px;
+}
+
+.container {
+  min-width: 327px;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin: 20%;
+  box-shadow: 10px 10px 54px -10px rgba(0,0,0,0.27);
+  border-radius: 12px 12px;
+}
+
+.image-container {
+  height: 250px;
+}
+
+.image-container img {
+  width: 100%;
+  border-radius: 12px 12px 0 0;
+}
+
+.main-container {
+  background-color: white;
+  padding: 15px 32px 15px 32px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0 0 12px 12px;
+}
+
+.main-container h3 {
+  color: hsl(217, 19%, 35%);
+  line-height: 1.5;
+}
+
+.main-container p {
+  padding-bottom: 20px;
+  color: hsl(212, 23%, 69%);
+  line-height: 1.5;
+}
+
+.profile-img {
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+}
+
+.main-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.michelle-data {
+  margin-left: 20px;
+  font-size: 14px;
+}
+
+.michelle-data p {
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+#name {
+  font-weight: bold;
+  color: hsl(217, 19%, 35%);
+}
+
+@media (min-width: 900px) {
+  .container {
+    max-width: none;
+    width: 800px;
+    min-height: 280px;
+    flex-direction: row;
+    margin: 15%;
+  }
+
+  .main-container {
+    border-radius: 0 12px 12px 0;
+    max-width: 400px;
+  }
+
+  .image-container {
+    height: inherit;
+  }
+
+  .image-container img {
+    border-radius: 12px 0 0 12px;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+}
